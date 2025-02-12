@@ -3,6 +3,7 @@ from core import gameSpace, EventHandler, constants
 from components.entity.SceneManager import SceneManager
 from components.preset.scene_main.scene_main import SCENE_MAIN
 from components.preset.scene_title.scene_title import SCENE_TITLE
+import sys
 
 
 def init():
@@ -40,7 +41,7 @@ def main():
         gameSpace.sceneManager.draw(dt, 1)
         pygame.display.update()
     pygame.quit()
-    quit()
+    sys.exit()
 
 
 if __name__ == "__main__":
